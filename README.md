@@ -1,4 +1,4 @@
-# getx_tutorial
+# **getx_tutorial**
 
 * Getx Roadmap   
 * Creating our Project and adding Getx Pacakages   
