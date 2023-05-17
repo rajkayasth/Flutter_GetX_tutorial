@@ -1,6 +1,6 @@
 # getx_tutorial
 
-Getx Roadmap
+Getx Roadmap   
 Creating our Project and adding Getx Pacakages
 Get Material App (Why we used Get Material App)
 GetX as utilities
