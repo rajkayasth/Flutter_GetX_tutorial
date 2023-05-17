@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_tutorial/get_height_width_demo.dart';
 import 'package:getx_tutorial/navigation_home_screen.dart';
 import 'package:getx_tutorial/screen_one.dart';
 import 'package:getx_tutorial/screen_two.dart';
@@ -19,11 +20,17 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const NavigationHomeScreen(),
+      //home: const NavigationHomeScreen(),
       getPages: [
         GetPage(
           name: "/",
-          page: () => NavigationHomeScreen(),
+          page: () =>
+
+              ///if want to use get height width tutorial
+              GetHeightWidth(),
+
+          ///If Navigate to Navigation demo Page
+          //NavigationHomeScreen(),
         ),
         GetPage(
           name: "/screenOne",
