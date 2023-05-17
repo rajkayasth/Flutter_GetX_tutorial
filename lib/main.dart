@@ -5,6 +5,7 @@ import 'package:getx_tutorial/localization_demo.dart';
 import 'package:getx_tutorial/localization_demo_2.dart';
 import 'package:getx_tutorial/screen_one.dart';
 import 'package:getx_tutorial/screen_two.dart';
+import 'package:getx_tutorial/state_management_demo_one.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,12 +32,15 @@ class MyApp extends StatelessWidget {
             name: "/",
             page: () =>
 
+                ///For StateManagement Example 1
+                StateManagementDemoOne(),
+
                 ///If want to use Localization in App
                 ///For Demo 1
                 // LocalizationDemo(),
 
                 ///For Demo 2
-                LocalizationDemoTwo()
+               // LocalizationDemoTwo()
 
             ///if want to use get height width tutorial
             //GetHeightWidth(),
