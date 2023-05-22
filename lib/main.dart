@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_tutorial/getx_api_calling_example/login/login_screen.dart';
+import 'package:getx_tutorial/getx_api_calling_example/shopping_app/shopping_list_screen.dart';
 import 'package:getx_tutorial/getx_statemanagement_demo_with_list/statemanagment_with_list.dart';
 import 'package:getx_tutorial/getx_statemanagement_expmple_three/StateManagementDemoThree.dart';
 import 'package:getx_tutorial/getx_statemangement_example_four/views/state_management_example_four.dart';
@@ -35,41 +37,47 @@ class MyApp extends StatelessWidget {
       //home: const NavigationHomeScreen(),
       getPages: [
         GetPage(
-            name: "/",
-            page: () =>
+          name: "/",
+          page: () =>
 
-                ///For StateManagement Example 1
-                // StateManagementDemoOne(),
+              ///For StateManagement Example 1
+              // StateManagementDemoOne(),
 
-                ///For StateManagement Example 2
-                // StateManagementDemoTwo(),
+              ///For StateManagement Example 2
+              // StateManagementDemoTwo(),
 
-                ///For StateManagement Example 3
-                // StateManagementDemoThree(),
+              ///For StateManagement Example 3
+              // StateManagementDemoThree(),
 
-                ///For StateManagement Example 4
-                //    ShoppingPage(),
+              ///For StateManagement Example 4
+              //    ShoppingPage(),
 
-                ///For StateManagement Example with List 1
+              ///For StateManagement Example with List 1
 
-                //StateManagementWithList(),
+              //StateManagementWithList(),
 
-                ///Image Picker Using GetX
-                ImagePickerScreen(),
+              ///Image Picker Using GetX
+              //ImagePickerScreen(),
 
-            ///If want to use Localization in App
-            ///For Demo 1
-            // LocalizationDemo(),
+              /// For API Calling Demo
+              // LoginScreen()
 
-            ///For Demo 2
-            // LocalizationDemoTwo()
+              /// For API Calling Demo2
+              ShoppingListScreen(),
 
-            ///if want to use get height width tutorial
-            //GetHeightWidth(),
+          ///If want to use Localization in App
+          ///For Demo 1
+          // LocalizationDemo(),
 
-            ///If Navigate to Navigation demo Page
-            //NavigationHomeScreen(),
-            ),
+          ///For Demo 2
+          // LocalizationDemoTwo()
+
+          ///if want to use get height width tutorial
+          //GetHeightWidth(),
+
+          ///If Navigate to Navigation demo Page
+          //NavigationHomeScreen(),
+        ),
         GetPage(
           name: "/screenOne",
           page: () => ScreenOne(),

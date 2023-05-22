@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_tutorial/getx_exmple_two/expmple_two_controller.dart';
 import 'package:getx_tutorial/getx_statemanagement_demo_with_list/favorite_controller.dart';
 
 class StateManagementWithList extends StatefulWidget {
@@ -12,7 +13,6 @@ class StateManagementWithList extends StatefulWidget {
 
 class _StateManagementWithListState extends State<StateManagementWithList> {
   FavoriteController favoriteController = Get.put(FavoriteController());
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
