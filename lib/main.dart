@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_tutorial/getx_api_calling_example/login/login_screen.dart';
 import 'package:getx_tutorial/getx_api_calling_example/shopping_app/shopping_list_screen.dart';
+import 'package:getx_tutorial/getx_mvvm_demo/views/splash_screen.dart';
 import 'package:getx_tutorial/getx_statemanagement_demo_with_list/statemanagment_with_list.dart';
 import 'package:getx_tutorial/getx_statemanagement_expmple_three/StateManagementDemoThree.dart';
 import 'package:getx_tutorial/getx_statemangement_example_four/views/state_management_example_four.dart';
@@ -40,6 +41,10 @@ class MyApp extends StatelessWidget {
           name: "/",
           page: () =>
 
+
+              /// For See of MVVM Architecture
+              SplashScreen(),
+
               ///For StateManagement Example 1
               // StateManagementDemoOne(),
 
@@ -63,7 +68,7 @@ class MyApp extends StatelessWidget {
               // LoginScreen()
 
               /// For API Calling Demo2
-              ShoppingListScreen(),
+             // ShoppingListScreen(),
 
           ///If want to use Localization in App
           ///For Demo 1
